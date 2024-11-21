@@ -13,9 +13,6 @@
         android:theme="@style/Theme.Controle_de_estoque"
         tools:targetApi="31">
         <activity
-            android:name=".TelaLogin"
-            android:exported="false" />
-        <activity
             android:name=".Splash"
             android:exported="true">
             <intent-filter>
@@ -23,15 +20,20 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity
+            android:name=".TelaLogin"
+            android:exported="false" />
+        <activity
+            android:name=".MenuPrincipal"
+            android:exported="true"/>
         <activity
             android:name=".TelaInicial"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

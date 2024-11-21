@@ -18,7 +18,7 @@ import java.util.Objects;
 
 public class TelaLogin extends AppCompatActivity {
 
-    Button btnentra;
+    Button btnentraa;
     TextInputEditText texto_tela_entrar_login, texto_tela_entrar_senha;
 
 
@@ -32,9 +32,9 @@ public class TelaLogin extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        btnentra = findViewById(R.id.bottao_tela_entrar);
+        btnentraa = findViewById(R.id.btn_entra);
 
-        btnentra.setOnClickListener(new View.OnClickListener() {
+        btnentraa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String email, senha;
@@ -43,7 +43,7 @@ public class TelaLogin extends AppCompatActivity {
                 senha = Objects.requireNonNull(texto_tela_entrar_senha.getText()).toString().trim();
 
                 if (email.equals("Lula") && senha.equals("lindo")){
-                    startActivity(new Intent(getApplicationContext(), TelaInicial.class));
+                    startActivity(new Intent(getApplicationContext(), MenuPrincipal.class));
                     finish();
                 }else {
                     Toast.makeText(getApplicationContext(), "usuario invalido",

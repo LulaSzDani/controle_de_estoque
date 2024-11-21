@@ -14,7 +14,7 @@
         android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="60dp"
-        android:src="#2c2c2c" />
+        android:src="@drawable/logo_estoque" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="230dp"
@@ -55,7 +55,7 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/bottao_tela_entrar"
+        android:id="@+id/btn_entra"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_gravity="center_horizontal"

@@ -1,35 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".TelaInicial">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-
-        <com.google.android.material.appbar.AppBarLayout
-
-            android:id="@+id/appBarLayout"
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/idToolBarBike"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/baseline_menu"
+            app:title="Menu Principal"
+            app:titleCentered="true"
+            app:titleTextColor="@color/black"
 
-            <com.google.android.material.appbar.MaterialToolbar
-                app:title="Tela principal"
-
-                android:id="@+id/topAppBar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minHeight="?attr/actionBarSize"
-                />
-
-        </com.google.android.material.appbar.AppBarLayout>
+            />
+    </com.google.android.material.appbar.AppBarLayout>
 
 
-
-
-
-
-</LinearLayout>
+</RelativeLayout>
